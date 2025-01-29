@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Figma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .left {
+            flex: 373px;
+            background-image: url(./bg/Login.png);
+            background-size: cover;
+            background-position: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: "Poppins";
+            color: white;
+        }
+
+        .left .box {
+            width: 475px;
+        }
+
+        .left h1 {
+            margin-top: 0px;
+            font-size: 40px;
+            font-family: "Poppins";
+        }
+
+        .left h6 {
+            font-weight: normal;
+            margin-top: -30px;
+            font-size: 18px;
+            font-family: "Poppins";
+        }
+
+        .left button {
+            font-family: "Poppins";
+            background-color: #0575E6;
+            border: none;
+            border-radius: 30px;
+            font-size: 14px;
+            color: white;
+            padding: 13px 40px;
+            margin-right: 315px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .left button::before {
+            content: "";
+            width: 100%;
+            height: 0;
+            background-color: rgba(215, 215, 215, 0.452);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: height .5s ease-out;
+        }
+
+        .left button:hover::before {
+            height: 100%;
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: "Poppins";
+
+        }
+
+        .right h1 {
+            margin: 0;
+            color: #333333;
+            font-size: 26px;
+            font-weight: bold;
+            font-family: "Poppins";
+        }
+
+        .right h6 {
+            font-family: "Poppins";
+            margin: 0;
+            color: #333333;
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 45px;
+        }
+
+        .second {
+            width: 307px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            font-size: 13px;
+            border: 1px solid #EEEEEE;
+            border-radius: 30px;
+            padding: 15px 40px;
+            font-family: "Poppins";
+        }
+        .second .pass {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .login button {
+            width: 100%;
+            background-color: #0575E6;
+            color: white;
+            font-size: 14px;
+            border: none;
+            border-radius: 30px;
+            padding: 15px 30px;
+            margin-bottom: 15px;
+            font-family: "Poppins";
+            position: relative;
+            overflow: hidden;
+        }
+
+        .login button::before {
+            content: "";
+            width: 100%;
+            height: 0;
+            background-color: rgba(3, 28, 255, 0.452);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: height .5s ease-out;
+        }
+
+        .login button:hover::before {
+            height: 100%;
+        }
+
+        .forgot a {
+            font-family: "Poppins";
+            font-size: 14px;
+            text-decoration: none;
+            color: #333333;
+            margin-bottom: 10px;
+            padding-left: 100px;
+        }
+        .pass i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #3333336a;
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <div class="left">
+        <div class="box">
+            <h1>GoFinance</h1>
+            <h6>The most popular peer to peer lending at SEA</h6>
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="second">
+            <h1>Hello Again!</h1>
+            <h6>Welcome Back</h6>
+
+            <div class="pass">
+                <input type="email" placeholder="Email Address">
+                <i class='bx bx-envelope'></i>
+            </div>
+
+            <div class="pass">
+                <input type="password" placeholder="Password">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="login">
+                <button>Login</button>
+            </div>
+
+
+            <div class="forgot">
+                <a href="">Forgot password?</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
