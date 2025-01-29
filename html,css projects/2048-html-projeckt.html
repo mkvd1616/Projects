@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            background-color: #faf8ef;
+        }
+
+        .dezutes {
+            width: 320px;
+            overflow: hidden;
+            border-radius: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            background-color: #9b887a;
+            margin: 20px auto;
+            padding: 5px 0px;
+            align-items: center;
+        }
+
+        .dezute {
+            width: 70px;
+            height: 70px;
+            font-family: "Rubik";
+            text-align: center;
+            font-weight: 700;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+
+        }
+
+        .zaidimas {
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .empty {
+            background-color: #bcaa96;
+
+        }
+
+        .two {
+            background-color: #fbefe3;
+            color: #756452;
+        }
+
+        .eight {
+            background-color: #f1af76;
+            color: #fefefe;
+        }
+
+        .four {
+            background-color: #d7c099;
+            color: #756452;
+        }
+
+        .orange {
+            background-color: #f45b37;
+            color: #fefefe;
+        }
+
+        .six {
+            background-color: #f48e5b;
+            color: #fefefe;
+        }
+
+        .three {
+            background-color: #f67c5f;
+            color: #fefefe;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dezutes zaidimas">
+        <div class="dezute empty"></div>
+        <div class="dezute empty"></div>
+        <div class="dezute two">2</div>
+        <div class="dezute two">2</div>
+        <div class="dezute empty"></div>
+        <div class="dezute empty"></div>
+        <div class="dezute empty"></div>
+        <div class="dezute eight">8</div>
+        <div class="dezute eight">8</div>
+        <div class="dezute eight">8</div>
+        <div class="dezute four">4</div>
+        <div class="dezute orange">64</div>
+        <div class="dezute three">32</div>
+        <div class="dezute six">16</div>
+        <div class="dezute six">16</div>
+        <div class="dezute six">16</div>
+    </div>
+</body>
+
+</html>

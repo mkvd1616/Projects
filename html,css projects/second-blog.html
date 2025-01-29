@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bblog</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .bar {
+            width: 100%;
+            padding: 20px 0px;
+            background-color: #000000;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .bar a {
+            display: inline-block;
+            padding: 0 50px;
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 60px;
+            background-color: #000000;
+            color: #ffffff;
+            width: 80%;
+            margin:10px auto 10%;
+            padding: 60px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: stretch;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: stretch;
+            gap: 15px;
+            margin-top: 40px 0px;
+        }
+
+        .products>div {
+            background: #000000;
+            border: 3px solid #ffffff;
+            border-radius: 5px;
+            padding: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(251, 251, 251);
+        }
+
+        h6 {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .ledai {
+            width: 90px;
+            height: 90px;
+            border-radius: 50px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .item1 {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .item1 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .item2 {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .item2 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .item3 {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .item3 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .bottom {
+            width: 100%;
+            padding: 10px 0;
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bar">
+        <a href="https://www.amorino.com/en">PRODUCTS</a>
+        <a href="https://www.amorino.com/en">DISCOUNTS</a>
+        <a href="https://www.amorino.com/en">BLOG</a>
+        <a href="https://www.amorino.com/en">ABOUT US</a>
+    </div>
+
+    <div class="container">
+        <H1>PRODUCTS</H1>
+        <H6>Affordable quality,every time</H6>
+
+        <div class="products">
+            <div class="item1">
+                <img class="ledai"
+                    src="https://images.pexels.com/photos/1332267/pexels-photo-1332267.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="">
+                <h1>VANILLA ICE CREAM</h1>
+                <p>Creamy,sweet,and classic,it's a timeless favorite.</p>
+                <a href="">READ MORE</a>
+            </div>
+
+            <div class="item2">
+                <img class="ledai"
+                    src="https://images.pexels.com/photos/2161649/pexels-photo-2161649.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="">
+                <h1>FRUIT SORBET</h1>
+                <P>Refreshing and tangy,it burst with natural fruit flavors.</P>
+                <a href="">READ MORE</a>
+            </div>
+
+            <div class="item3">
+                <img class="ledai"
+                    src="https://images.pexels.com/photos/5060281/pexels-photo-5060281.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="">
+                <h1>CHOCOLATE GELATO</h1>
+                <P>Rich,indulgent,and oh-so-smooth, a chocoholic's dream.</P>
+                <a href="">READ MORE</a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        @ICE+CREAM & CO
+    </div>
+</body>
+
+</html>
